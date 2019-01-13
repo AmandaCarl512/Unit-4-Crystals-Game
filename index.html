@@ -3,47 +3,65 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Simple Crystal Game</title>
+  <title>Crystal Game</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
+
 <body>
-<!-- add jquery library y css relative pathway -->
-    <!-- add in crystal image - use css .crystal-image to make it smaller
-    add in link to jquery llibrary -->
+<html>
+<div class= "Game-Title">
+    <h1>
+        <i class="em em-large_orange_diamond"></i> Crystal Collector Game!<i class="em em-diamonds"></i><i class="em em-large_blue_diamond"></i>
+    </h1>
+</div>
 
+<div class= "Game-Instr">
+    <p>You will be given a random number at the start of the game. This is your target number.</p>
+        <p></p>
+        <p>There are four crystals below. By clicking on one of these four crystals, 
+        <br>you will add a certain amount of points to your total score.</p>
+        <p></p>
+        <p>You can only win the game by matching your total score to a random number.
+        <br>You lose the game if your total score goes above the random number.</p>
+        <p></p>    
+        <p>The value of each crystal becomes known once you click on it.
+        <br>Each time the game begins, the values of each crystal change.</p>
+        <p></p>
+       <p>Good luck!</p>
+    </div>
+<div class= "Block">
+    <div class= "Num-Total">
+        <p id="targetNumber"></p>
+    </div>
 
-<script>
-    // <script type ="text/javascript" src="huttps.//cdnjs.cloudflare.com/ajax/libs"
-    // need to create a for loop to create crystals for every number options 
-    // for each iteration, create crystal with attributes, append, etc 
-    // for (var i + 0)
-    var targetNumber = 55;
+    <div class= "W-L">
+            <h2>Wins:
+                    <span id= "wins"></span>
+                    </br>
+                Losses: 
+                    <span id= "losses"></span>
+            </h2>
+    </div>
 
-    $("#number-to-guess").text(targetNumber);
+    <div class= "color">
+            <img src="assets/images/diamond.jpg" class=crystalImage id="one" alt="diamond">
+            <img src="assets/images/pink.jpg" class=crystalImage id= "two" alt="pink">
+            <img src="assets/images/purple.jpg" class=crystalImage id= "three" alt="purple">
+            <img src="assets/images/white.jpg" class=crystalImage id= "four" alt="white">
+    </div>
+</div>
 
-    var counter = 0;
-    var numberOptions = [10, 11];
-    var increment = numberOptions[Math.round(Math.random())];
+    <div class= "Score-Title">
+        <p>Your total score is: </p>
+    </div>
 
-    $(".crystal-image").on("click", function() {
-        // each time the user clicks the crystal the counter goes up by 1. You can change this number (more points?)
-        counter += increment;
-        // clicking the button triggers an alert message
-    alert("Your new score is " + counter + " !");
+    <div class= "Score">
+        <p id="runningTotal"></p>
+    </div>
 
-    if (counter === targetNumber) {
-
-        alert("You win!");
-    }
-
-    else if (counter >= targetNumber) {
-        alert("You lose!");
-    }
-    
-    
-});
-    
-</script>
-
-
-
+ </html>
 </body>

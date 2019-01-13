@@ -1,0 +1,98 @@
+body {
+    background: url(https://images.pexels.com/photos/1121123/pexels-photo-1121123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260) pink;
+  }
+
+
+.Game-Title {
+    background-color:palevioletred;
+    color: white;
+    height: 50px;
+    width: 600px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.Game-Instr {
+    background-color: purple;
+    color: whitesmoke;
+    height: 300px;
+    width: 600px;
+    margin: 15px;
+    padding: 15px;
+    font-size: 23px;
+    text-align: left;
+    line-height: 25px;
+    
+}
+
+.Num-Total {
+    color: white;
+    text-align: center;
+    background-color: palevioletred;
+    height: 80px;
+    width: 100px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 60px;
+    padding: 15px;
+    float: left;
+}
+
+.W-L {
+    color: white;
+    background-color: palevioletred;
+    height: 80px;
+    width: 425px;
+    margin-top: 0px;
+    margin-left: 15px;
+    font-size: 35px;
+    padding: 15px;
+    float: left;
+
+}
+
+.color {
+width:600px;
+height:300px;
+background-color:pink;
+margin-left:15px;
+}
+
+.crystalImage {
+height: 125px;
+padding-left: 15px;
+padding-top: 30px;
+float: left;
+}
+
+/* #three {
+    float: left;
+} */
+
+/* we have separate Id's(#) for each different picture of a crystal */
+
+.Score-Title {
+    height: 35px;
+    width: 600px;
+    font-size: 25px;
+    background-color: palevioletred;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 15px;
+}
+
+.Score {
+    height: 50px;
+    width: 650px;
+    font-size: 40px;
+    background-color: palevioletred;
+    color: white;
+    padding: 5px;
+    margin: 15px;
+    text-align: center;
+
+}
