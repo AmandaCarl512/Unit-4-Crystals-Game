@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Crystal Game</title>
+</head>
+<body>
+<!-- add jquery library y css relative pathway -->
+    <!-- add in crystal image - use css .crystal-image to make it smaller
+    add in link to jquery llibrary -->
+
+
+<script>
+    // <script type ="text/javascript" src="huttps.//cdnjs.cloudflare.com/ajax/libs"
+    // need to create a for loop to create crystals for every number options 
+    // for each iteration, create crystal with attributes, append, etc 
+    // for (var i + 0)
+    var targetNumber = 55;
+
+    $("#number-to-guess").text(targetNumber);
+
+    var counter = 0;
+    var numberOptions = [10, 11];
+    var increment = numberOptions[Math.round(Math.random())];
+
+    $(".crystal-image").on("click", function() {
+        // each time the user clicks the crystal the counter goes up by 1. You can change this number (more points?)
+        counter += increment;
+        // clicking the button triggers an alert message
+    alert("Your new score is " + counter + " !");
+
+    if (counter === targetNumber) {
+
+        alert("You win!");
+    }
+
+    else if (counter >= targetNumber) {
+        alert("You lose!");
+    }
+    
+    
+});
+    
+</script>
+
+
+
+</body>
